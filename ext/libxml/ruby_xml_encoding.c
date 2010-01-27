@@ -56,7 +56,7 @@ static VALUE rxml_encoding_from_s(VALUE klass, VALUE encoding)
     return Qnil;
 
   xencoding = xmlParseCharEncoding(StringValuePtr(encoding));
-  return NUM2INT(xencoding);
+  return INT2NUM(xencoding);
 }
 
 /*
